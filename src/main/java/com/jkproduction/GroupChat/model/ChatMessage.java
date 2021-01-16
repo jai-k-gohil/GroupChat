@@ -1,24 +1,45 @@
 package com.jkproduction.GroupChat.model;
 
-import lombok.Builder;
-import lombok.Getter;
-
 /**
  * Created by
  *
  * @author jaikishorgohil
  */
 
-@Builder
 public class ChatMessage {
     private  MessageType messageType;
 
-    @Getter
     private String sender;
 
-    @Getter
     private String content;
 
-    @Getter
     private String time;
+
+    public void setMessageType(MessageType messageType) {
+        this.messageType = messageType;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
 }
